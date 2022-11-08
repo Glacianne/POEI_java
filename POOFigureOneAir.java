@@ -67,17 +67,13 @@ class POOFigureOne {
 
         Point p1 = new Point(5, 6);
         p1.affiche();
-        // (5, 6)
 
         Cercle c1 = new Cercle(11, 61, 45);
         c1.affiche();
-        // (5, 6)
 
         Carre k1 = new Carre(18, -3, 15);
         k1.affiche();
-        // Carre : (5, 6) cote=15
         Rectangle r1 = new Rectangle(3, 19, 99, 18);
         r1.affiche();
-        // Rectangle : (5, 6) long=99 lar=18
     }
 }
