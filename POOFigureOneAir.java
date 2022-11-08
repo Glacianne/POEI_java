@@ -61,7 +61,7 @@ class Carre extends Rectangle {
 }
 
 class POOFigureOne {
-    // Xavier
+    // Anne-Isabelle
 
     public static void main(String[] args) {
 
