@@ -208,7 +208,6 @@ public class SchoolAir {
         school1.addPerson(new Student("Paul", cinquieme));
         school1.addPerson(new Student("Romain", quatrieme));
         school1.ringBell();
-        school1.getPersonByName("Jacques");
         quatrieme.getPersonsByGrade();
 
     }
