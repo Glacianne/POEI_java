@@ -1,5 +1,4 @@
-import java.util.*;
-import java.util.ArrayList.*;
+package Semaine_3_java;
 
 abstract interface Figure {
     abstract public void move(int x, int y);

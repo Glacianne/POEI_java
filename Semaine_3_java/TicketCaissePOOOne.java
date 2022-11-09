@@ -1,3 +1,4 @@
+package Semaine_3_java;
 import java.util.*;
 import java.util.ArrayList.*;
 
