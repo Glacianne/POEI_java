@@ -6,7 +6,7 @@ public class AnnonceAir {
 
     private String title;
     private String author;
-    private double price;
+    private String price;
 
     public AnnonceAir() {
     }
@@ -24,7 +24,7 @@ public class AnnonceAir {
         System.out.print("Titre de l'annonce : ");
         this.title = sc.nextLine();
         System.out.print("Prix en euros : ");
-        this.price = sc.nextDouble();
+        this.price = sc.nextLine();
         System.out.println("");
 
     }
