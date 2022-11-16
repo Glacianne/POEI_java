@@ -14,7 +14,7 @@ class Atester {
         return n.substring(0, 1).toUpperCase() + n.substring(1).toLowerCase();
     }
 
-    static public boolean bisextile(int annee) {
+    static public boolean isBisextile(int annee) {
         if (annee % 400 == 0) {
             return true;
         } else if (annee % 100 == 0) {
@@ -26,10 +26,15 @@ class Atester {
         }
     }
 
+    static public Double tarif(int age) {
+        return age < 12 ? 4.0 : age < 60 ? 5.5 : 4.5;
+    }
+
 }
 
 public class LesTestOneAir {
     public static void main(String[] args) {
+        System.out.println("Tests calculs");
         if (Atester.calcul1(3) == 15)
             System.out.println("OK");
         else
@@ -45,6 +50,7 @@ public class LesTestOneAir {
         else
             System.out.println("KO");
 
+        System.out.println("Tests strings");
         if (Atester.presentation("toto").equals("Toto"))
             System.out.println("OK");
         else
@@ -65,14 +71,21 @@ public class LesTestOneAir {
         else
             System.out.println("KO");
 
-        if (Atester.bisextile(2020))
+        System.out.println("Tests années bisextiles");
+        if (Atester.isBisextile(2020))
             System.out.println("OK");
         else
             System.out.println("KO");
 
-        if (Atester.bisextile(2021))
+        if (Atester.isBisextile(2021))
             System.out.println("KO");
         else
             System.out.println("OK");
+
+        /*
+         * inf à 12 a -> 4€
+         * inf à 60 a -> 5.5€
+         * sup ega à 60 a -> 4.5€
+         */
     }
 }

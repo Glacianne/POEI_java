@@ -1,0 +1,18 @@
+ah! this is good in case where i dont need an array but isn't tokenizer returning an array of token? nice idea though – 
+Coding Enthusiast
+No, there isn't any array being produced . StringTokenizer looks for the consecutive tokens in the string and returns them one by one. – 
+Kao
+Nice solution, unfortunately, StringTokenizer should not be used anymore. From the Docs: StringTokenizer is a legacy class that is retained for compatibility reasons although its use is discouraged in new code. It is recommended that anyone seeking this functionality use the split method of String or the java.util.regex package instead. – 
+Tomor
+To include any separators between words (like everything except all lower case and upper case letters), we can do:
+Ces fleurs des champs d’automne sont citées par le poète de l’époque de Nara (710-794), Yamanoue no Okura, dans le Man’yôshû, le plus ancien recueil de poèmes japonais actuellement conservé.
+Je compte sur mes doigts
+Les fleurs épanouies dans un champ d’automne
+J’en trouve sept.
+Ce sont le lespédèze, les roseaux à plumets, l’arrow-root, l’œillet dianthus, la dentelle d’or, et aussi l’eupatoire et la campanule.
+Hagi, le lespédèze
+Un arbuste à feuilles caduques de la famille des légumineuses. De la fin de l’été à l’automne, de petites fleurs rouge-violet fleurissent sur de fines branches penchées vers l’avant. L’élégance de son doux balancement dans le vent le fait souvent apparaître dans le Man’yôshû.
+Kikyô, la campanule
+Une plante herbacée vivace de la famille des Campanulacées largement répandue en Asie de l’Est. Lorsque Yamanoue no Okura cite la fleur asagao (belle-de-jour), il fait en fait référence à la campanule et non au liseron d’aujourd’hui. Cette fleur est souvent utilisée comme emblème par les clans de samouraïs. Le motif kage-kikyô, campanule de l’ombre, est associé à Akechi Mitsuhide, célèbre pour avoir trahi le seigneur Oda Nobunaga.
+Kuzu, l’arrow-root
+De la famille des légumineuses, ses racines contiennent une fécule qui est utilisée en cuisine et pour la confection des gâteaux. Le kakkontô, une décoction réalisée à partir de racines séchées d’arrow-root mélangées à d’autres plantes médicinales, est connu pour ses propriétés antitussives et antipyrétiques.
