@@ -1,8 +1,8 @@
-//import {Mage} from "./mage.js";
-const Mage = require('./mage');
-const Aventurier = require('./aventurier');
-const Guerrier = require('./guerrier');
-const Paladin = require('./paladin');
+//import {Mage} from "./Mage.js";
+const Mage = require('./Mage');
+const Aventurier = require('./Aventurier');
+const Guerrier = require('./Guerrier');
+const Paladin = require('./Paladin');
 
 class Village{
     constructor(nbvillageois, nbbois, nbpierre, nbor, batiments) {
