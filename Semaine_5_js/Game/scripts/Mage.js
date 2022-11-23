@@ -1,5 +1,5 @@
-const Personnage = require('./Personnage');
-const Spell = require('./Spell');
+import {Personnage} from "./Personnage.js";
+import {Spell} from "./Spell.js";
 
 class Mage extends Personnage{
     constructor(name) {
@@ -16,5 +16,5 @@ class Mage extends Personnage{
     }
 }
 
-module.exports = Mage;
+export {Mage};
 

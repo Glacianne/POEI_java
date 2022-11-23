@@ -1,5 +1,5 @@
-const Personnage = require('./Personnage');
-const Spell = require('./Spell');
+import {Personnage} from "./Personnage.js";
+import {Spell} from "./Spell.js";
 
 class Vampire extends Personnage{
     constructor(name) {
@@ -11,9 +11,9 @@ class Vampire extends Personnage{
         this.attaques.push(
             (new Spell("Morsure", 35, 15, ()=> console.log("Miam miam"))),
             (new Spell("Regard glaçant", 15, 5, ()=> console.log(".........."))),
-            (new Spell("Prise de sang", 10, 2, ()=> console.log("Tu vas tâter de la puissance de mon bâton !")))
+            (new Spell("Prise de sang", 10, 2, ()=> console.log("Ca va saigner !")))
         );
     }
 }
 
-module.exports = Vampire;
+export {Vampire};

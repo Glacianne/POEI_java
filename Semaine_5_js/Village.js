@@ -1,5 +1,5 @@
 //import {Mage} from "./Mage.js";
-const Mage = require('./Mage');
+const Mage = require('./scripts/Mage.js');
 const Aventurier = require('./Aventurier');
 const Guerrier = require('./Guerrier');
 const Paladin = require('./Paladin');

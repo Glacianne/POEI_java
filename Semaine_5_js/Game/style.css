@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body #wrapper #game {
+    background-image: url("assets/Forest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    display: none;
+}
+body #wrapper #game img {
+    position: absolute;
+    bottom: 0;
+}
+body #wrapper #game img.ninja {
+    height: 400px;
+}
+body #wrapper #game img.ninja#perso2 {
+    transform: scaleX(-1);
+}
+body #wrapper #game img.vampire#perso2 {
+    transform: scaleX(-1);
+}
+body #wrapper #game img.mage {
+    height: 340px;
+    bottom: 60px;
+}
+body #wrapper #game img.mage#perso1 {
+    transform: scaleX(-1);
+    left: 60px;
+}
+body #wrapper #game img.mage#perso2 {
+    right: 60px;
+}
+body #wrapper #game img#perso2 {
+    right: 0;
+}
+body #wrapper #game .paragraphe-p1, body #wrapper #game .paragraphe-p2 {
+    position: absolute;
+}
+body #wrapper #game .paragraphe-p1 {
+    bottom: 450px;
+    left: 150px;
+    padding: 10px 20px;
+    border: 1px solid #535353;
+    background-color: #a9a9a9;
+    animation: fadeIn 2s;
+}
+body #wrapper #game .paragraphe-p2 {
+    bottom: 450px;
+    right: 150px;
+    padding: 10px 20px;
+    border: 1px solid #535353;
+    background-color: #a9a9a9;
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+body #wrapper #game .box {
+    position: absolute;
+    bottom: 10px;
+    border: 1px solid black;
+    background-color: gray;
+}
+body #wrapper #game .box button {
+    border: 1px solid #775f3b;
+    background-color: #e0a853;
+    color: #000;
+    height: 100%;
+    padding: 0 5px;
+}
+body #wrapper #game .box progress {
+    position: absolute;
+    bottom: 400px;
+}
+body #wrapper #game .box .sorts img {
+    width: 64px;
+    cursor: pointer;
+    position: initial;
+}
+body #wrapper #game .personnage-b1 {
+    left: 100px;
+}
+body #wrapper #game .personnage-b1 progress {
+    left: 70px;
+}
+body #wrapper #game .personnage-b2 {
+    right: 150px;
+}
+body #wrapper #game .personnage-b2 progress {
+    right: 70px;
+}

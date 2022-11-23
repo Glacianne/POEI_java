@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+<div id="wrapper">
+  <div id="game"></div>
+  <div class="start">
+    <form id="formulaire">
+      <label>Joueur 1</label>
+      <select name="select-j1" id="select-j1">
+        <option value="ninja">Ninja</option>
+        <option value="vampire">Vampire</option>
+        <option value="mage">Mage</option>
+      </select>
+      <label for="name-j1">Nom du personnage</label>
+      <input type="text" id="name-j1">
+      <label>Joueur 2</label>
+      <select name="select-j2" id="select-j2">
+        <option value="ninja">Ninja</option>
+        <option value="vampire">Vampire</option>
+        <option value="mage">Mage</option>
+      </select>
+      <label for="name-j2">Nom du personnage</label>
+      <input type="text" id="name-j2">
+      <input type="submit" id="submit" value="Commencer à jouer">
+    </form>
+  </div>
+</div>
+</body>
+<script src="./scripts/Personnage.js" type="module"></script>
+<script src="./scripts/app.js" type="module"></script>
+</html>

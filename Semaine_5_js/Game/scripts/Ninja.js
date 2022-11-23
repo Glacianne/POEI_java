@@ -1,5 +1,5 @@
-const Personnage = require('./Personnage');
-const Spell = require('./Spell');
+import {Personnage} from "./Personnage.js";
+import {Spell} from "./Spell.js";
 
 class Ninja extends Personnage{
     constructor(name) {
@@ -16,4 +16,4 @@ class Ninja extends Personnage{
     }
 }
 
-module.exports = Ninja;
+export {Ninja};

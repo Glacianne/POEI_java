@@ -1,5 +1,5 @@
 //import {Personnage} from './Personnage.js'
-const Personnage = require('./Personnage');
+const Personnage = require('./scripts/Personnage.js');
 
 class Aventurier extends Personnage{
     constructor(nom, sante, force, xp) {
