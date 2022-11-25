@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+
+	<h1>Veuillez renseigner le formulaire suivant pour calculer votre IMC et recevoir des conseils personnalisés</h1>
+
+	<h:form>
+		<label>Nom</label><br/>
+		<h:inputText value="#{User.nom}"></h:inputText><br/>
+		<label>Age</label><br/>
+		<h:inputText value="#{User.age}"></h:inputText><br/>
+		<label>Sexe</label><br/>
+		<h:selectOneRadio value="#{User.sexe}">
+			<f:selectItem itemLabel="homme" itemValue="false"/>
+			<f:selectItem itemLabel="femme" itemValue="true"/>
+		</h:selectOneRadio>
+		<label>Poids en kg</label><br/>
+		<h:inputText value="#{User.poids}" /><br/>
+		<label>Taille en m</label><br/>
+		<h:inputText value="#{User.taille}" /><br/>
+		<h:commandButton action="#{User.setImc()}" value="Envoyer" /><br/>
+		<h:outputText value="#{User.imc}"/>	
+	</h:form>
+	
+	
+	
+	</body> 
+</html>

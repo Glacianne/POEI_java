@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	background-color: purple;
+}
+
+#wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1{
+	width: 40vw;
+	color: purple;
+	margin: 15px;
+	padding: 4px;
+	background-color: lightyellow;
+	text-align: center;
+	font-family: calibri;
+}
+
+p{
+	width: 60vw;
+	color: white;
+	text-align : justify;
+	border: 4px;
+	border-color: white;
+	border-style: dot-dash;
+}
+
+button{
+	width: 7vw;
+	border-radius: 3px;
+	margin: 15px;
+	border: 0;	
+}
+
+button:hover{
+	background-color: lightpink;
+}
