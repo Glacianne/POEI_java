@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestGET</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+
+        function succesCB(data) {
+            $('.livre').text(`Livre créé : ${data.titre} de ${data.auteur}.`).addClass("green").removeClass("red");
+        }
+
+        function save() {
+            valTitre = $("#titre").val();
+            valAuteur = $("#auteur").val();
+            if (valTitre && valAuteur) {
+                $.ajax(
+                    {
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        type: 'POST',
+                        //url: "http://localhost:8080/createlivre",
+                        url: "http://localhost:8080/addlivre",
+                        dataType: 'json',
+                        data: JSON.stringify({titre: valTitre, auteur: valAuteur}),
+                        success: succesCB,
+                        //complete: function (xhr, status) {
+                            //console.log('complete : ', xhr.responseText, status, '--fin--');
+                        //}
+                    }
+                );
+            } else {
+                $('.livre').text("Veuillez remplir les champs titre et auteur.").addClass("red");
+            }
+        }
+
+        function afficherLivres(){
+            $.get("http://localhost:8080/getlistelivres", (data)=>{
+                $('#liste').empty();
+                $.each(data, function(i, livre) {
+                    $('#liste').append(`Livre ${i+1} : ${livre.titre} de ${livre.auteur}<br>`);
+                });
+                $('#liste').append(`Nombre de livres dans votre bibliothèque : ${data.length}`);
+            })
+        }
+    </script>
+
+    <style>
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<label>Titre</label><br>
+<input type="text" name="titre" id="titre"><br>
+<label>Auteur</label><br>
+<input type="text" name="auteur" id="auteur"><br>
+<button onclick="save()">Enregistrer</button>
+<p class="livre"></p>
+
+<button onclick="afficherLivres()">Afficher ma bibliothèque</button>
+<div id="liste"></div>
+
+</body>
+</html>

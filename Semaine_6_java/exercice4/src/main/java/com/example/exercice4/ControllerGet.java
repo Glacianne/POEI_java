@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import jakarta.servlet.http.HttpServletRequest;
 
 @RestController
-public class Controller {
+public class ControllerGet {
     private final AtomicLong counter = new AtomicLong();
     @GetMapping("/bonjour")
     public Hello hello(@RequestParam(value = "name", defaultValue = "Inconnu") String name)
