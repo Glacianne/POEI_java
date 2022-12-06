@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestGET</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+
+        function getTicket( )
+        {
+            $.get("http://localhost:8080/getBill", affTicketCB );
+        }
+
+        function affTicketCB( data, status )
+        {
+            console.log(data);
+            $("#afffichTicket").append(data.client + " : ");
+            ticket = "<ul>";
+            for(i=0 ; i<data.listeArticles.length ; i++){
+               ticket += "<li>" + data.listeArticles[i].item + " : " + data.listeArticles[i].price + "€"+ "</li>";
+            }
+            $("#afffichTicket").append(ticket + "</ul>");
+            $("#afffichTicket").append("Total = " + data.tot + "€");
+        }
+
+        /* ==========================================================  */
+
+
+        function succesCBArticle( data )
+        {
+            console.log( "post OK ! " + data );
+        }
+        
+        function errorCBArticle( data )
+        {
+            console.log( "post KO ! " + data );
+        }
+        
+        function saveArticle( )
+        {
+            valArticle = $("#articleName").val();
+            valPrix = $("#articlePrice").val();
+
+            console.log( valArticle + " " + valPrix  );
+            jQuery.ajax(
+                {
+                    headers: { 
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json' 
+                    },
+                    'type': 'POST',
+                    'url': "http://localhost:8080/addArticle",
+                    'data': JSON.stringify({ price : valPrix, item : valArticle } ),
+                    'dataType': 'json',
+                    'success': succesCBArticle,
+                    'error': errorCBArticle
+                }
+            );
+        }
+
+        /* ==========================================================  */
+
+        function succesCBName( data )
+        {
+            console.log( "post OK ! " + data );
+        }
+        
+        function errorCBName( data )
+        {
+            console.log( "post KO ! " + data );
+        }
+        
+        function saveClient( )
+        {
+            valNom = $("#name").val();
+
+            console.log( valNom );
+            jQuery.ajax(
+                {
+                    headers: { 
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json' 
+                    },
+                    'type': 'POST',
+                    'url': "http://localhost:8080/addClientName",
+                    'data': valNom,
+                    'dataType': 'json',
+                    'success': succesCBName,
+                    'error': errorCBName
+                }
+            );
+        }
+
+
+    </script>
+</head>
+<body>
+    <input id="name" placeholder="nom du client">
+    <button onclick="saveClient()">OK</button>
+    <br>
+    <br>
+    <br>
+    <input id="articleName"  placeholder="article">
+    <input id="articlePrice" placeholder="prix">
+    <button onclick="saveArticle()">OK</button>
+    <br>
+    <br>
+    <button onclick="getTicket()">GET TICKET</button>
+    <br>
+    <br>
+    <div id="afffichTicket"></div>
+</body>
+</html>
