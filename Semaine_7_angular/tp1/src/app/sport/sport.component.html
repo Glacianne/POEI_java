@@ -1,0 +1,7 @@
+<h1 *ngIf="sports.length > 0">Liste des sports :</h1>
+
+<ul>
+  <li *ngFor="let sport of sports" (click)="onSelectSport(sport)">
+    {{sport}}
+  </li>
+</ul>
