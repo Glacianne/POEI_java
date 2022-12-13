@@ -18,8 +18,4 @@ export class PetListComponent implements OnInit {
   }
 
   ngOnInit(): void {}
-
-  onClickPet(id: string): void {
-    this.petService.selectPet(id);
-  }
 }

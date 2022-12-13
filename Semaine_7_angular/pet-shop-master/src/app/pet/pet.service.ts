@@ -12,18 +12,16 @@ export class PetService {
   private petsUrl =
     'https://formation-6e588-default-rtdb.europe-west1.firebasedatabase.app/pets.json';
   pets: IPet[] = [];
-  selectedPet: IPet | undefined | null = null;
 
   constructor(private http: HttpClient, private router:Router) {
     this.getPets();
   }
 
-  selectPet(petId: string): void {
-    if (this.selectedPet?.id === petId) {
-      this.selectedPet = null;
-    } else {
-      this.selectedPet = this.pets.find((pet) => pet.id === petId);
+  petWithId(id:string){
+    if (!this.pets.some((pet) => pet.id === id)) {
+      return null;
     }
+    return this.pets.find((pet) => pet.id === id)!;
   }
 
    postPet(
