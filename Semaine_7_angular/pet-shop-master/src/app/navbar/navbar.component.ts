@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PetService } from '../pet/pet.service';
+import { AuthService } from '../auth/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,5 +7,14 @@ import { PetService } from '../pet/pet.service';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-  constructor(private petService: PetService) {}
+  constructor(private authService: AuthService) {}
+
+  onToggleAuth(){
+    console.log(this.isAuth);
+    this.authService.toggleAuth();
+  }
+
+  get isAuth(){
+    return this.authService.isAuth;
+  }
 }

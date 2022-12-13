@@ -5,4 +5,12 @@
   <div>
     <a routerLink="pet">Pet</a>
   </div>
+  <div>
+    <button
+      (click)="onToggleAuth()"
+      [ngClass]="{ red: !isAuth, green: isAuth }"
+    >
+      Connecté
+    </button>
+  </div>
 </div>
