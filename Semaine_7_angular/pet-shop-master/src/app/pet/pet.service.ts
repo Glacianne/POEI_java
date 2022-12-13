@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { map } from 'rxjs';
 
 import { IPet, Species } from './model/pet';
@@ -12,14 +13,9 @@ export class PetService {
     'https://formation-6e588-default-rtdb.europe-west1.firebasedatabase.app/pets.json';
   pets: IPet[] = [];
   selectedPet: IPet | undefined | null = null;
-  isCreatingPet: boolean = false;
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private router:Router) {
     this.getPets();
-  }
-
-  togglePetCreation(): void {
-    this.isCreatingPet = !this.isCreatingPet;
   }
 
   selectPet(petId: string): void {
@@ -30,27 +26,25 @@ export class PetService {
     }
   }
 
-  // createPet(
-  //   name: string,
-  //   species: Species,
-  //   price: number,
-  //   isAvailable: boolean,
-  //   imageUrl: string
-  // ): void {
+   postPet(
+     name: string,
+     species: Species,
+     price: number,
+     isAvailable: boolean,
+     imageUrl: string
+   ): void {
 
-  //   const pet: IPet = {
-  //     id: maxId + 1,
-  //     name,
-  //     species,
-  //     price,
-  //     isAvailable,
-  //     imageUrl,
-  //   };
-
-  //   this.pets.push(pet);
-
-  //   this.isCreatingPet = false;
-  // }
+    this.http.post(this.petsUrl, {
+      name,
+      species,
+      price,
+      isAvailable,
+      imageUrl,
+    }).subscribe(() => {
+      this.getPets();
+    });
+    this.router.navigate(['pet', 'index']);
+   }
 
   getPets(): void {
     this.http
