@@ -13,6 +13,7 @@ import { AddPetComponent } from './pet/add-pet/add-pet.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PetIndexComponent } from './pet/pet-index/pet-index.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { PetIndexComponent } from './pet/pet-index/pet-index.component';
     HomeComponent,
     PetIndexComponent,
   ],
-  imports: [BrowserModule, ReactiveFormsModule, HttpClientModule, AppRoutingModule],
+  imports: [BrowserModule, ReactiveFormsModule, HttpClientModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })

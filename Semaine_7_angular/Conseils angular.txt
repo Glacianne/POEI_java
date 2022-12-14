@@ -1,0 +1,37 @@
+**Pour ceux qui voudraient approfondir Angular par la suite, voir se spécialiser dessus, vous trouverez des tonnes de ressources sur le web !**
+
+***Voici quelques pistes (non exhaustives) de concepts à découvrir ou approfondir :***
+
+- Basique
+	- Bien revoir l'asynchrone, les "Observable", les appels HTTP et l'opérateur RxJS "map"
+	- Les "Promise" : autre objet asynchrone et commun à tout JS (elles sont dans les slides sur TypeScript avec des exemples)
+	- Revoir les pipes et apprendre à en fabriquer
+	- Comprendre les NgModules, puis apprendre à découper une app (en "feature modules" avec un SharedModule et un CoreModule)
+	- Bien revoir les "BehaviorSubject" et comment bien les utiliser avec le pipe "| async"
+- Moyen
+	- Les directives (bien comprendre ce que c'est et apprendre à en fabriquer)
+	- Les EventListener (souvent utilisés avec les directives)
+	- Bien maîtriser les méthodes du cycle de vie des composants et des directives
+	- Comprendre et utiliser le lazy-loading (quand les NgModules et le routage sont bien maîtrisés)
+	- Les resolvers (routing)
+- Avancé
+	- La gestion d'état réactive, le Store pattern et NgRx
+	- Les HTTP interceptors  
+	- Les opérateurs RxJs (on a vu "map", vous pouvez approfondir et en voir d'autres comme switchMap, mergeMap, filter, combineLatest ...)
+	- L'immutabilité des objets : bonne pratique commune à JavaScript (assurez-vous d'abord de bien comprendre la différence entre les types "valeur" et "référence")
+	- La détection des changements d'Angular : par défaut VS "OnPush" / puis la différence entre les pipes "pure" et "impure" (tout ça une fois que  l'immutabilité est bien maîtrisée)
+
+***Et voilà quelques exemples de ressources pour vous former (formez-vous continuellement, en Angular ou autre !)***
+
+- Gratuites :
+	- Documentation officielle de la technologie (ex : https://angular.io/)
+	- YouTube
+	- FreeCodeCamp
+	- CodinGames (jeux hyper amusants pour progresser et se challenger en algo)
+- Payantes :
+	- PluralSight (abonnement et accès aux cours illimités façon Netflix)
+	- Udemy (paiement par cours, environ 100€ mais en réalité soldés à 10/15 € tous les 2/3 jours)
+
+***Dernier conseil : Progressez en Anglais quel que soit votre niveau actuel ! Hyper important dans ce milieu ! ***
+
+Bon chance ;)
