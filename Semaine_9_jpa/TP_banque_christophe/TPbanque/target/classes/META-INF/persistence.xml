@@ -1,0 +1,19 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    <persistence-unit name="jpa_tp1">
+        <description> Ici je peut metre une description. N'oubliez pas de modifier le mot de passe !!! </description>
+        <class>org.example.entity.Client</class>
+        <class>org.example.entity.Agence</class>
+        <class>org.example.entity.Compte</class>
+
+        <properties>
+            <property name="javax.persistence.schema-generation.database.action" value="none"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/tpbanque"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="test"/>
+        </properties>
+    </persistence-unit>
+</persistence>
