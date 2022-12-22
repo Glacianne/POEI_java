@@ -7,12 +7,10 @@ import org.example.model.Compte;
 import javax.persistence.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class Main {
+
     public static void main(String[] args) throws ParseException {
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("banque");
@@ -98,9 +96,36 @@ public class Main {
                 }
             }
         }
+        System.out.println("----------------------------------------------------------------------");
 
+        Scanner scanner = new Scanner(System.in);
+
+        transaction.begin();
+
+        System.out.println("Ajout d'un nouveau client\nVeuillez entrer votre nom : ");
+        String nom1 = scanner.next();
+        System.out.println("prénom : ");
+        String prenom1 = scanner.next();
+
+        Client cl1 = new Client(nom1, prenom1);
+        em.persist(cl1);
+
+        listeClients.add(cl1);
+
+        transaction.commit();
+
+        Query q4 = em.createQuery("select c from Client c");
+
+        System.out.println("----------------------------------------------------------------------");
+        System.out.println("Liste des clients : ");
+        for (Object c : q4.getResultList()){
+            Client client = (Client) c;
+            System.out.println(client.getId() + " : " + client.getNom() + " " + client.getPrenom());
+        }
+        System.out.println("----------------------------------------------------------------------");
+
+        scanner.close();
         em.close();
         emf.close();
-
     }
 }

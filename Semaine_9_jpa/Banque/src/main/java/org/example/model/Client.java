@@ -25,10 +25,9 @@ public class Client {
 
     public Client(){}
 
-    public Client(String nom, String prenom, Date date_naissance) {
+    public Client(String nom, String prenom) {
         this.nom = nom;
         this.prenom = prenom;
-        this.date_naissance = date_naissance;
     }
 
     public int getId() {
