@@ -31,7 +31,6 @@ export class PetService {
      isAvailable: boolean,
      imageUrl: string
    ): void {
-
     this.http.post(this.petsUrl, {
       name,
       species,

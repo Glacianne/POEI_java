@@ -5,37 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2e17db0-3311-4d06-b5d7-0973a50fca40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/exercices/exercice1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/exercices/exercice2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/src/main/java/com/example/demospring/DemospringApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/src/main/java/com/example/demospring/classe/ClasseA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/src/main/java/com/example/demospring/classe/ClasseB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/src/main/java/com/example/demospring/classe/MaClasse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/src/main/java/com/example/demospring/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/src/main/java/com/example/demospring/controller/PersonneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/src/main/java/com/example/demospring/entity/Personne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/src/main/java/com/example/demospring/interfaces/IPersonneService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/src/main/java/com/example/demospring/service/Personne2Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/src/main/java/com/example/demospring/service/PersonneService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demospring/demospring/src/test/java/com/example/demospring/DemospringApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/config/SogetiAthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/model/AccountTransactions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/model/Accounts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/model/Cards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/model/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/model/Loans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/model/Notice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/repository/AccountTransactionsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/repository/AccountsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/repository/CardsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/repository/ContactRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/repository/LoanRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/repository/NoticeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo_security/src/main/java/com/example/demo_security/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo_security/src/main/java/com/example/demo_security/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo_security/src/main/java/com/example/demo_security/controller/BalanceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo_security/src/main/java/com/example/demo_security/controller/CardsCotnroller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo_security/src/main/java/com/example/demo_security/controller/ContactController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo_security/src/main/java/com/example/demo_security/controller/LoansController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo_security/src/main/java/com/example/demo_security/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo_security/src/main/java/com/example/demo_security/controller/NoticesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Semaine_3_java/POO_S2_Java_School" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semaine_3_java/POO_S2_Java_School" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Semaine_7_angular/playground-Maxime" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semaine_7_angular/playground-Maxime" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../exercice_produits/java_JPA_Spring" beforeDir="false" afterPath="$PROJECT_DIR$/../exercice_produits/java_JPA_Spring" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semaine_9_jpa/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semaine_9_jpa/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semaine_9_jpa/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semaine_9_jpa/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semaine_9_jpa/Banque/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semaine_9_jpa/Banque/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semaine_9_jpa/Banque/src/main/java/org/example/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semaine_9_jpa/Banque/src/main/java/org/example/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semaine_9_jpa/Banque/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semaine_9_jpa/Banque/target/classes/org/example/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semaine_9_jpa/Banque/target/classes/org/example/model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semaine_9_jpa/Banque/target/classes/org/example/model/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Semaine_9_spring/tp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semaine_9_spring/tp1/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +63,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/IB/Desktop/POEI_java/Semaine_8_java/java_JPA_Spring-main/exercice",
+    "last_opened_file_path": "C:/Users/IB/Desktop/POEI_java/Semaine_8_java/exercice_produits",
     "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
@@ -101,6 +95,7 @@
       <workItem from="1671630674799" duration="38000" />
       <workItem from="1671631090673" duration="68000" />
       <workItem from="1671704925239" duration="18000" />
+      <workItem from="1673612646033" duration="34000" />
     </task>
     <servers />
   </component>

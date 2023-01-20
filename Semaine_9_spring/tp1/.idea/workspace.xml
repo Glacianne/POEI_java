@@ -5,13 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="309d6728-03c4-4122-a896-15c9dd57babb" name="Changes" comment="tp1 terminé">
-      <change afterPath="$PROJECT_DIR$/../../Semaine_9_jpa/Spring.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Semaine_9_jpa/jpa1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Semaine_9_jpa/jpa2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/config/SogetiAthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/model/AccountTransactions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/model/Accounts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/model/Cards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/model/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/model/Loans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/model/Notice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/repository/AccountTransactionsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/repository/AccountsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/repository/CardsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/repository/ContactRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/repository/LoanRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo-spring-security-master/src/main/java/com/example/demosogetisecurity/repository/NoticeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo_security/src/main/java/com/example/demo_security/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo_security/src/main/java/com/example/demo_security/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo_security/src/main/java/com/example/demo_security/controller/BalanceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo_security/src/main/java/com/example/demo_security/controller/CardsCotnroller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo_security/src/main/java/com/example/demo_security/controller/ContactController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo_security/src/main/java/com/example/demo_security/controller/LoansController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo_security/src/main/java/com/example/demo_security/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Semaine_10_jspring_security/demo_security/src/main/java/com/example/demo_security/controller/NoticesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Semaine_3_java/POO_S2_Java_School" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semaine_3_java/POO_S2_Java_School" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Semaine_7_angular/playground-Maxime" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semaine_7_angular/playground-Maxime" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Semaine_8_java/exercice_produits/java_JPA_Spring" beforeDir="false" afterPath="$PROJECT_DIR$/../../Semaine_8_java/exercice_produits/java_JPA_Spring" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Semaine_9_jpa/tp1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,19 +68,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/IB/Desktop/POEI_java/Semaine_9_jpa/tp1&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;35a448b5c9018c4b93cd8dbe8502d060&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/IB/Desktop/POEI_java/Semaine_10_jspring_security/demo-spring-security-master",
+    "spring.configuration.checksum": "35a448b5c9018c4b93cd8dbe8502d060"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Tp1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="tp1" />
@@ -83,6 +101,8 @@
       <workItem from="1671713915525" duration="7711000" />
       <workItem from="1671721890964" duration="1006000" />
       <workItem from="1671723571015" duration="102000" />
+      <workItem from="1673607326346" duration="127000" />
+      <workItem from="1673607555426" duration="157000" />
     </task>
     <task id="LOCAL-00001" summary="ajout tp1 semaine 9">
       <created>1671714368695</created>
